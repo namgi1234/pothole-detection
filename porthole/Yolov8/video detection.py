@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 
 
-model = YOLO("pt/best.pt")
+model = YOLO("best.pt")
 cap = cv2.VideoCapture("./포트홀 충격 전방 블랙박스.mp4")
 
 while cap.isOpened() :
