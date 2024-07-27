@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 import cv2
-model = YOLO("pt/bestn.pt")
+model = YOLO("best.pt")
 
 result = model.predict("182216_34674_4316.jpg",save = True, conf=0.5)
 plots = result[0].plot()
